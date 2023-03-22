@@ -30,7 +30,7 @@ router.get("/md5", async (ctx) => {
   try {
     const s3Object = await s3
       .getObject({
-        Bucket: "cdknftednsstack-bucket83908e77-1x20fkeun8cnb",
+        Bucket: "InputBucket",
         Key: key.toString(),
       })
       .promise();
