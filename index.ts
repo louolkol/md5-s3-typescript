@@ -11,9 +11,9 @@ const md5 = (contents: Buffer) => crypto.createHash("md5").update(contents).dige
 
 // AWS S3 configuration
 const s3 = new AWS.S3({
-    accessKeyId: "AKIAY3N5ILFSHD2TOK5R",
-    secretAccessKey: "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",
-    region: "us-east-1",
+    accessKeyId: "InputAccessKeyId",
+    secretAccessKey: "InputSecretAccessKey",
+    region: "InputRegion",
 });
 
 // Route handler for /md5
