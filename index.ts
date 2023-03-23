@@ -38,6 +38,7 @@ router.get("/md5", async (ctx) => {
     const hash = md5(s3Object.Body as Buffer);
 
     ctx.body = hash;
+    ctx.status = 200;
   } catch (err) {
     ctx.status = 500;
     ctx.body = `Error getting S3 object: ${err}`;
