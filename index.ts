@@ -47,6 +47,6 @@ router.get("/md5", async (ctx) => {
 
 app.use(router.routes());
 
-app.listen(3000, () => {
-  console.log(`Server listening on port 3000`);
+app.listen(80, () => {
+  console.log(`Server listening on port 80`);
 });
